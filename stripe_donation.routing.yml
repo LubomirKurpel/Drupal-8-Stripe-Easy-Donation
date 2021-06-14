@@ -1,0 +1,15 @@
+stripe_donation.content:
+  path: 'donate'
+  defaults:
+    _controller: '\Drupal\stripe_donation\Controller\StripeDonationController::content'
+    _title: 'Donate'
+  requirements:
+    _permission: 'access content'
+
+stripe_donation.config:
+  path: 'admin/config/api/stripe_donation'
+  defaults:
+    _form: '\Drupal\stripe_donation\Form\StripeDonationConfigForm'
+    _title: 'Stripe Donation Configuration'
+  requirements:
+    _permission: 'administer stripe donation'

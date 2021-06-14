@@ -1,0 +1,11 @@
+stripe_donation:
+  version: 1.x
+  css:
+    theme:
+      css/stripe_donation.css: {}
+  js:
+    https://js.stripe.com/v3/: { type: external, minified: true }
+    js/stripe.donation.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupalSettings

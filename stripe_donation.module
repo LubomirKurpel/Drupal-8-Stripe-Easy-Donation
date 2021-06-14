@@ -1,0 +1,19 @@
+<?php
+
+/**
+ * Set up all templates for our module. What is especially important
+ * here are the variables we make available to twig.
+ */
+function stripe_donation_theme($existing, $type, $theme, $path) {
+  return array(
+    'stripe_donation' => array(
+        'variables' => array(
+            'stripe_publishable_key' => NULL,
+            'form' => NULL,
+            'welcome_text' => NULL
+        ),
+    ),
+  );
+}
+
+?>

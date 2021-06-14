@@ -1,0 +1,6 @@
+name: Stripe Donations
+description: Creates a donation form using the Stripe payments service
+package: Custom
+type: module
+version: 1.0
+core: 8.x

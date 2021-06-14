@@ -1,0 +1,5 @@
+# Module specific configuration options. These options
+# are editable at in site settings at /admin/config/api/stripe_donation
+stripe_publishable_key: ''
+donation_name: 'One-time donation'
+welcome_text: 'Thank you for deciding to support our organization. Please specify how much you would like to donate.'

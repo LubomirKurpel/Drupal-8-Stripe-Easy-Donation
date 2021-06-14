@@ -1,0 +1,12 @@
+stripe_donation.content:
+  title: 'Donate'
+  description: 'Donate'
+  route_name: stripe_donation.content
+  parent: main
+  menu_name: main
+
+stripe_donation.config:
+  title: 'Stripe Donation'
+  description: 'Configure Stripe API tokens'
+  parent: system.admin_config_services
+  route_name: 'stripe_donation.config'
