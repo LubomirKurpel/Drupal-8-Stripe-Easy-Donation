@@ -1,4 +1,4 @@
-# Drupal 8 Easy Stripe Donation
+# Drupal 8 Stripe Easy Donation
 
 ## What does this module do?
 This is a simple module that adds the ability to accept donations using the Stripe Checkout API V3. The end result is a new main menu item "Donate". This leads users to a page where they can specify exactly how much they would like to donate. Afterwards, payment infomation are being collected and sent off to Stripe.
