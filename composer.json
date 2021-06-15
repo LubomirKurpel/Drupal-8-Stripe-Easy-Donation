@@ -1,0 +1,16 @@
+{
+  "name": "drupal/stripedonation", 
+  "type": "drupal-module",
+  "description": "Stripe Easy Donation",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/stripedonation",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/stripedonation",
+    "source": "http://cgit.drupalcode.org/stripedonation"
+  },
+  "require": {
+    "stripe/stripe-php": "^7.0"
+  }
+}
