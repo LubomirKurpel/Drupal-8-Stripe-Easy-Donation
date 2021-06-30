@@ -77,10 +77,9 @@ class StripeDonationConfigForm extends ConfigFormBase {
         foreach($values as $key => $value){
             $config->set($key, $values[$key])->save();
         }
+		
+		\Drupal::messenger()->addStatus('The configuration options have been saved.');
 
-        drupal_set_message(
-            $this->t('The configuration options have been saved.')
-        );
     }
 }
 
