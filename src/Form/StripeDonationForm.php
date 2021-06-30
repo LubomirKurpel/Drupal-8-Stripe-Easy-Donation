@@ -90,13 +90,14 @@ class StripeDonationForm extends FormBase
 				'confirm' => true,
 			]);
 			
-			drupal_set_message(t('Donation was successfully sent. Thank you for your support.'));
+			\Drupal::messenger()->addStatus('Donation was successfully sent. Thank you for your support.');
 
 		}
 		catch(Exception $e)
 		{
+			
 		   // something went wrong
-		   drupal_set_message(t('Donation have failed. Please try later.'));
+		   \Drupal::messenger()->addStatus('Donation have failed. Please try later.');
 		   
 		}
 		
