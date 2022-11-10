@@ -27,7 +27,7 @@ class StripeDonationController extends ControllerBase
 
         return [
             '#theme' => 'stripe_donation',
-            '#stripe_publishable_key' => $stripe_publishable_key,
+            '#stripe_publishable_key' => $config->get('stripe_publishable_key'),
             '#welcome_text' => $this->t($config->get('welcome_text')),
             '#attached' => [
                 'library' => [
@@ -40,6 +40,8 @@ class StripeDonationController extends ControllerBase
                     ],
                     'stripe_donation' => [
                         'stripe_publishable_key' => $config->get('stripe_publishable_key'),
+                        'stripe_default_currency' => $config->get('stripe_default_currency'),
+                        'stripe_hide_postalcode' => $config->get('stripe_hide_postalcode'),
                         'form_id' => $form['#id']
                     ]
                 ]

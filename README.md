@@ -1,4 +1,4 @@
-# Drupal 8 / 9 Stripe Easy Donation
+# Drupal 8 Stripe Easy Donation
 
 ## What does this module do?
 This is a simple module that adds the ability to accept donations using the Stripe Checkout API V3. The end result is a new main menu item "Donate". This leads users to a page where they can specify exactly how much they would like to donate. Afterwards, payment infomation are being collected and sent off to Stripe.
@@ -8,7 +8,7 @@ This module uses Stripe API V3.
 ## Requirements
 - Stripe PHP API library `composer require stripe/stripe-php`
 - Stripe account and API tokens
-- Drupal 8 / 9
+- Drupal 8 / 9 (not tested in 9 but it should work)
 
 ## Installation
 To install this module you will want to put the source in the [appropriate directory](https://www.drupal.org/docs/8/extending-drupal-8/installing-modules#mod_location).
